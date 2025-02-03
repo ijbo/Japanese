@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Hiragana → Romaji → Meaning Practice</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 24px;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .word {
+      cursor: pointer;
+      padding: 2px 4px;
+      transition: background-color 0.2s;
+    }
+    .word:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>クリックしてテキストを切り替えよう<br>
+      ひらがな → ローマ字 → 意味</h1>
+  
+  <!-- Sentence 1 -->
+  <p>
+    <span class="word" data-hiragana="あさ" data-romaji="asa" data-meaning="morning">あさ</span>
+    <span class="word" data-hiragana="は" data-romaji="wa" data-meaning="(topic marker)">は</span>
+    <span class="word" data-hiragana="さわやか" data-romaji="sawayaka" data-meaning="refreshing">さわやか</span>
+    <span class="word" data-hiragana="な" data-romaji="na" data-meaning="(na-adjective connector)">な</span>
+    <span class="word" data-hiragana="ひかり" data-romaji="hikari" data-meaning="light">ひかり</span>
+    <span class="word" data-hiragana="と" data-romaji="to" data-meaning="and">と</span>
+    <span class="word" data-hiragana="やさしい" data-romaji="yasashii" data-meaning="gentle">やさしい</span>
+    <span class="word" data-hiragana="かぜ" data-romaji="kaze" data-meaning="wind">かぜ</span>
+    <span class="word" data-hiragana="が" data-romaji="ga" data-meaning="(subject marker)">が</span>
+    <span class="word" data-hiragana="まち" data-romaji="machi" data-meaning="town">まち</span>
+    <span class="word" data-hiragana="を" data-romaji="wo" data-meaning="(object marker)">を</span>
+    <span class="word" data-hiragana="あるきます" data-romaji="arukimasu" data-meaning="walks">あるきます</span>。
+  </p>
+  
+  <!-- Sentence 2 -->
+  <p>
+    <span class="word" data-hiragana="わたし" data-romaji="watashi" data-meaning="I">わたし</span>
+    <span class="word" data-hiragana="の" data-romaji="no" data-meaning="(possessive marker)">の</span>
+    <span class="word" data-hiragana="めがね" data-romaji="megane" data-meaning="glasses">めがね</span>
+    <span class="word" data-hiragana="は" data-romaji="wa" data-meaning="(topic marker)">は</span>
+    <span class="word" data-hiragana="ぴったり" data-romaji="pittari" data-meaning="snugly">ぴったり</span>
+    <span class="word" data-hiragana="と" data-romaji="to" data-meaning="with">と</span>
+    <span class="word" data-hiragana="ちかく" data-romaji="chikaku" data-meaning="near">ちかく</span>
+    <span class="word" data-hiragana="に" data-romaji="ni" data-meaning="(location marker)">に</span>
+    <span class="word" data-hiragana="ある" data-romaji="aru" data-meaning="exists">ある</span>
+    <span class="word" data-hiragana="がっこう" data-romaji="gakkou" data-meaning="school">がっこう</span>
+    <span class="word" data-hiragana="へ" data-romaji="e" data-meaning="to">へ</span>
+    <span class="word" data-hiragana="むかいます" data-romaji="mukaimasu" data-meaning="goes">むかいます</span>。
+  </p>
+  
+  <!-- Sentence 3 -->
+  <p>
+    <span class="word" data-hiragana="みち" data-romaji="michi" data-meaning="road">みち</span>
+    <span class="word" data-hiragana="は" data-romaji="wa" data-meaning="(topic marker)">は</span>
+    <span class="word" data-hiragana="かるい" data-romaji="karui" data-meaning="light">かるい</span>
+    <span class="word" data-hiragana="ざっし" data-romaji="zasshi" data-meaning="magazine">ざっし</span>
+    <span class="word" data-hiragana="と" data-romaji="to" data-meaning="and">と</span>
+    <span class="word" data-hiragana="ちいさな" data-romaji="chiisana" data-meaning="small">ちいさな</span>
+    <span class="word" data-hiragana="はな" data-romaji="hana" data-meaning="flower">はな</span>
+    <span class="word" data-hiragana="が" data-romaji="ga" data-meaning="(subject marker)">が</span>
+    <span class="word" data-hiragana="さいこう" data-romaji="saikou" data-meaning="best">さいこう</span>
+    <span class="word" data-hiragana="に" data-romaji="ni" data-meaning="(adverbial marker)">に</span>
+    <span class="word" data-hiragana="ひかります" data-romaji="hikarimasu" data-meaning="shines">ひかります</span>。
+  </p>
+  
+  <!-- Sentence 4 -->
+  <p>
+    <span class="word" data-hiragana="ともだち" data-romaji="tomodachi" data-meaning="friend">ともだち</span>
+    <span class="word" data-hiragana="の" data-romaji="no" data-meaning="(possessive marker)">の</span>
+    <span class="word" data-hiragana="みほ" data-romaji="miho" data-meaning="Miho">みほ</span>
+    <span class="word" data-hiragana="と" data-romaji="to" data-meaning="with">と</span>
+    <span class="word" data-hiragana="ちょっと" data-romaji="chotto" data-meaning="a little">ちょっと</span>
+    <span class="word" data-hiragana="おどろく" data-romaji="odoroku" data-meaning="surprised">おどろく</span>
+    <span class="word" data-hiragana="ひと" data-romaji="hito" data-meaning="person">ひと</span>
+    <span class="word" data-hiragana="に" data-romaji="ni" data-meaning="(directional marker)">に</span>
+    <span class="word" data-hiragana="あいまします" data-romaji="aimashimasu" data-meaning="meets">あいまします</span>。
+  </p>
+  
+  <!-- Sentence 5 -->
+  <p>
+    <span class="word" data-hiragana="あした" data-romaji="ashita" data-meaning="tomorrow">あした</span>
+    <span class="word" data-hiragana="は" data-romaji="wa" data-meaning="(topic marker)">は</span>
+    <span class="word" data-hiragana="ゆうがた" data-romaji="yuugata" data-meaning="evening">ゆうがた</span>
+    <span class="word" data-hiragana="に" data-romaji="ni" data-meaning="(location marker)">に</span>
+    <span class="word" data-hiragana="ふくざつ" data-romaji="fukuzatsu" data-meaning="complicated">ふくざつ</span>
+    <span class="word" data-hiragana="な" data-romaji="na" data-meaning="(na-adjective connector)">な</span>
+    <span class="word" data-hiragana="うた" data-romaji="uta" data-meaning="song">うた</span>
+    <span class="word" data-hiragana="を" data-romaji="wo" data-meaning="(object marker)">を</span>
+    <span class="word" data-hiragana="きいて" data-romaji="kiite" data-meaning="listens to">きいて</span>
+    <span class="word" data-hiragana="あそびます" data-romaji="asobimasu" data-meaning="plays">あそびます</span>。
+  </p>
+  
+  <!-- Sentence 6 -->
+  <p>
+    <span class="word" data-hiragana="にほん" data-romaji="nihon" data-meaning="Japan">にほん</span>
+    <span class="word" data-hiragana="の" data-romaji="no" data-meaning="(possessive marker)">の</span>
+    <span class="word" data-hiragana="おいしい" data-romaji="oishii" data-meaning="delicious">おいしい</span>
+    <span class="word" data-hiragana="すいか" data-romaji="suika" data-meaning="watermelon">すいか</span>
+    <span class="word" data-hiragana="や" data-romaji="ya" data-meaning="and">や</span>
+    <span class="word" data-hiragana="みずみずしい" data-romaji="mizumizushii" data-meaning="juicy">みずみずしい</span>
+    <span class="word" data-hiragana="みかん" data-romaji="mikan" data-meaning="mandarin">みかん</span>
+    <span class="word" data-hiragana="を" data-romaji="wo" data-meaning="(object marker)">を</span>
+    <span class="word" data-hiragana="たべる" data-romaji="taberu" data-meaning="eats">たべる</span>
+    <span class="word" data-hiragana="と" data-romaji="to" data-meaning="and when">と</span>
+    <span class="word" data-hiragana="こころ" data-romaji="kokoro" data-meaning="heart">こころ</span>
+    <span class="word" data-hiragana="が" data-romaji="ga" data-meaning="(subject marker)">が</span>
+    <span class="word" data-hiragana="はずむ" data-romaji="hazumu" data-meaning="jumps">はずむ</span>。
+  </p>
+  
+  <!-- Sentence 7 -->
+  <p>
+    <span class="word" data-hiragana="あめ" data-romaji="ame" data-meaning="rain">あめ</span>
+    <span class="word" data-hiragana="が" data-romaji="ga" data-meaning="(subject marker)">が</span>
+    <span class="word" data-hiragana="ふる" data-romaji="furu" data-meaning="falls">ふる</span>
+    <span class="word" data-hiragana="と" data-romaji="to" data-meaning="when">と</span>
+    <span class="word" data-hiragana="こっそり" data-romaji="kossori" data-meaning="secretly">こっそり</span>
+    <span class="word" data-hiragana="みち" data-romaji="michi" data-meaning="road">みち</span>
+    <span class="word" data-hiragana="を" data-romaji="wo" data-meaning="(object marker)">を</span>
+    <span class="word" data-hiragana="あるき" data-romaji="aruki" data-meaning="walking">あるき</span>
+    <span class="word" data-hiragana="ながら" data-romaji="nagara" data-meaning="while">ながら</span>
+    <span class="word" data-hiragana="ぽかぽか" data-romaji="pokapoka" data-meaning="warm">ぽかぽか</span>
+    <span class="word" data-hiragana="おちゃ" data-romaji="ocha" data-meaning="tea">おちゃ</span>
+    <span class="word" data-hiragana="を" data-romaji="wo" data-meaning="(object marker)">を</span>
+    <span class="word" data-hiragana="のみます" data-romaji="nomimasu" data-meaning="drinks">のみます</span>。
+  </p>
+  
+  <!-- Sentence 8 -->
+  <p>
+    <span class="word" data-hiragana="ちいさな" data-romaji="chiisana" data-meaning="small">ちいさな</span>
+    <span class="word" data-hiragana="きゃく" data-romaji="kyaku" data-meaning="guest">きゃく</span>
+    <span class="word" data-hiragana="が" data-romaji="ga" data-meaning="(subject marker)">が</span>
+    <span class="word" data-hiragana="しんせつ" data-romaji="shinsetsu" data-meaning="kind">しんせつ</span>
+    <span class="word" data-hiragana="に" data-romaji="ni" data-meaning="(adverbial marker)">に</span>
+    <span class="word" data-hiragana="かみなり" data-romaji="kaminari" data-meaning="thunder">かみなり</span>
+    <span class="word" data-hiragana="の" data-romaji="no" data-meaning="(possessive marker)">の</span>
+    <span class="word" data-hiragana="おと" data-romaji="oto" data-meaning="sound">おと</span>
+    <span class="word" data-hiragana="を" data-romaji="wo" data-meaning="(object marker)">を</span>
+    <span class="word" data-hiragana="きいて" data-romaji="kiite" data-meaning="hears">きいて</span>
+    <span class="word" data-hiragana="はやく" data-romaji="hayaku" data-meaning="quickly">はやく</span>
+    <span class="word" data-hiragana="にげました" data-romaji="nigemashita" data-meaning="ran away">にげました</span>。
+  </p>
+  
+  <!-- Sentence 9 -->
+  <p>
+    <span class="word" data-hiragana="ゆるやか" data-romaji="yuruyaka" data-meaning="gentle">ゆるやか</span>
+    <span class="word" data-hiragana="な" data-romaji="na" data-meaning="(na-adjective connector)">な</span>
+    <span class="word" data-hiragana="みち" data-romaji="michi" data-meaning="road">みち</span>
+    <span class="word" data-hiragana="を" data-romaji="wo" data-meaning="(object marker)">を</span>
+    <span class="word" data-hiragana="すこし" data-romaji="sukoshi" data-meaning="a little">すこし</span>
+    <span class="word" data-hiragana="ゆっくり" data-romaji="yukkuri" data-meaning="slowly">ゆっくり</span>
+    <span class="word" data-hiragana="あるきます" data-romaji="arukimasu" data-meaning="walks">あるきます</span>
+    <span class="word" data-hiragana="ね" data-romaji="ne" data-meaning="(right?)">ね</span>。
+  </p>
+  
+  <script>
+    // For each word, store a "state" in the dataset:
+    // 0 = hiragana, 1 = romaji, 2 = meaning.
+    document.querySelectorAll('.word').forEach(function(element) {
+      element.dataset.state = "0"; // initial state: hiragana
+      
+      element.addEventListener('click', function() {
+        let state = parseInt(element.dataset.state);
+        if (state === 0) {
+          // Change from hiragana to romaji.
+          element.textContent = element.getAttribute('data-romaji');
+          element.dataset.state = "1";
+          element.style.backgroundColor = "#e0e0e0";
+        } else if (state === 1) {
+          // Change from romaji to meaning.
+          element.textContent = element.getAttribute('data-meaning');
+          element.dataset.state = "2";
+          element.style.backgroundColor = "#d0d0d0";
+        } else if (state === 2) {
+          // Revert to hiragana.
+          element.textContent = element.getAttribute('data-hiragana');
+          element.dataset.state = "0";
+          element.style.backgroundColor = "";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
